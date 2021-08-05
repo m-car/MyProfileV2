@@ -5,55 +5,295 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marko's Portfolio</title>
+    <link rel="stylesheet" href="assets\font-awesome-4.7.0\css\font-awesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="assets\CSS\style.css"> -->
 </head>
 
-<body>
-    <div class="column is-10 is-offset-1  is-narrow-desktop">
-
-        <nav>
-            <ul> 
-                <li>
-                    <a href="#aboutMe">About Me</a>
-                </li>
-                <li>
-                    <a href="#myWork">My Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact Me</a>
-                </li>
-                <li>
-                    <a href="https://docs.google.com/document/d/1qO5b36ok1bkXrWp_ZhhHzUPTVE9L9dxQG5q7kA-S8nc/edit?usp=sharing">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-        <div class="column is-10 is-offset-1">
+<body class="has-navbar-fixed-top ">
+  <div class="column is-10 is-offset-1  "> 
+    <!-- NAVBAR -->
+    <nav class="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <h1>m.c.</h1>
+    
+        <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href='#aboutMe' >
+            About Me
+          </a>
+    
+          
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              My Work
+            </a>
+            
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#kodeKeeper">
+                Kode Keeper
+              </a>
+              <a class="navbar-item" href="#crypto">
+                Crypto Launch
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              
+            </div>
+          </div>
+          <a class="navbar-item">
+            Contact Me
+          </a>
+          <a class="navbar-item" >
+            Resume
+          </a>
+          <a class="navbar-item navbar-end" >
+            Resume
+          </a>
+         
+        </div>
+    
+        
+    </nav>
+   
+     
+  </div>
+  <!-- MAIN BODY -->
+  <div class="column is-10 is-offset-1">
+    <section class="hero is-primary">
+      <div class="hero-body" id="aboutMe">
+        <p class="title">
+          About Me
+        </p>
+        <p class="subtitle">
+          Welcome to my Portfolio webpage. This page is a work in progress and I will be 
+                adding to and refining it as I learn more web development techniques and practices.
+                Please browse my selected works and enjoy your stay!
+        </p>
+      </div>
+    </section>
+    <!-- ABOUT ME -->
           <div class="box">
-            <p class="title is-5">Flexible column</p>
-            <p class="subtitle">This column will take up the remaining space available.</p>
-            
-            
+            <p class="title is-5">About Me</p>
+            <p class="subtitle">Welcome to my Portfolio webpage. This page is a work in progress and I will be 
+                adding to and refining it as I learn more web development techniques and practices.
+                Please browse my selected works and enjoy your stay!</p>
+          </div>
+
+          <!-- <div class="box">
+              <div class="block">
+                  Project <strong>Name</strong>.
+              </div>
+              <div class="block">
+                    Project <strong>Description</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+              </div>
+              <div class="block">
                 <button class="button is-primary">
                     Primary button
                 </button>
-                <section id="aboutMe" class=>
-                    <h2>About Me</h2>
-                    <p>
-                        Welcome to my Portfolio webpage. This page is a work in progress and I will be 
-                        adding to and refining it as I learn more web development techniques and practices.
-                        Please browse my selected works and enjoy your stay!   
-                        
-                    </p>
-                </section>
-            
-          </div>
+                <button class="button">
+                  
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span><a href="https://github.com/m-car/crypto-launchpad">GitHub</a></span>
+                </button>
+              </div>
+    </div>
+     -->
+  
+    <!-- MY WORK -->
+     <div class="box" id="kodeKeeper">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-64x64">
+            <img src="assets\images\KodeKeeperCreateView.PNG" alt="Image">
+          </figure>
         </div>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>Kode Keeper</strong>
+              <br>
+              A developer tool to keep your commonly used code in one convienent place.
+            </p>
+          </div>
+          <nav class="level is-mobile">
+              <div class="level-left">
+                  
+                <button class="button">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </button>
+            </div>
+          </nav>
+        </div>
+      </article>
     </div>
-        
-    </div>
+
+    <div class="box " id="crypto">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="assets\images\cryptolaunchMobile.PNG" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Crypto-Launch</strong>
+                <br>
+                Get today's report on crypto-currency.
+              </p>
+            </div>
+            <nav class="level is-mobile">
+                <div class="level-left">
+                    
+                  <button class="button">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </button>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
+      <div class="box " id="crypto">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="assets\images\cryptolaunchMobile.PNG" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Crypto-Launch</strong>
+                <br>
+                Get today's report on crypto-currency.
+              </p>
+            </div>
+            <nav class="level is-mobile">
+                <div class="level-left">
+                    
+                  <button class="button">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </button>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
+      <div class="box " id="crypto">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="assets\images\cryptolaunchMobile.PNG" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Crypto-Launch</strong>
+                <br>
+                Get today's report on crypto-currency.
+              </p>
+            </div>
+            <nav class="level is-mobile">
+                <div class="level-left">
+                    
+                  <button class="button">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </button>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
+      <div class="box " id="crypto">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="assets\images\cryptolaunchMobile.PNG" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Crypto-Launch</strong>
+                <br>
+                Get today's report on crypto-currency.
+              </p>
+            </div>
+            <nav class="level is-mobile">
+                <div class="level-left">
+                    
+                  <button class="button">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </button>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
+      <div class="box " id="crypto">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="assets\images\cryptolaunchMobile.PNG" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Crypto-Launch</strong>
+                <br>
+                Get today's report on crypto-currency.
+              </p>
+            </div>
+            <nav class="level is-mobile">
+                <div class="level-left">
+                    
+                  <button class="button">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </button>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
+   
+</div>
+    
+
+
+
     <script src="assets/js/index.js"> </script>
     </body>
     </html>
